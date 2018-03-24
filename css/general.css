@@ -34,6 +34,10 @@ body {
   padding: 12em 0;
 }
 
+.section {
+  margin: 1em;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -95,6 +99,12 @@ body {
   transition: all .15s ease-in-out;
 }
 
+.fas .fa-envelope-square {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
 @media(max-width: 800px){
   .logo_text {
     display: flex;
@@ -111,7 +121,7 @@ body {
 
   .about_me {
     display: flex;
-    font-size: 1rem;
+    font-size: .75rem;
     font-weight: bold;
   }
 
@@ -138,8 +148,8 @@ body {
   .link {
     display:flex;
     color: white;
-    padding: 0.3em 0.8em;
-    font-size: 1em;
+    padding: 0.3em 0.5em;
+    font-size: .75em;
     transition: all .15s ease-in-out;
   }
 }
