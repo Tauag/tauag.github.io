@@ -123,6 +123,7 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
+    text-align: center;
   }
 
   .contact_icon_first {
