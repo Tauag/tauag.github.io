@@ -99,12 +99,6 @@ body {
   transition: all .15s ease-in-out;
 }
 
-.fas .fa-envelope-square {
-  display: inline-block;
-  font-size: inherit;
-  text-rendering: auto;
-}
-
 @media(max-width: 800px){
   .logo_text {
     display: flex;
@@ -128,8 +122,6 @@ body {
   .contact_icons{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
     list-style: none;
   }
 
@@ -142,7 +134,7 @@ body {
   .contact_icon {
     display: list-item;
     text-align: -webkit-match-parent;
-    margin: 1em 0;
+    margin: .5em 0;
   }
 
   .link {
