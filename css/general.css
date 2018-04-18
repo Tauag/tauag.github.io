@@ -11,6 +11,7 @@ body {
   font-size: 12pt;
   font-family: 'Ubuntu', sans-serif;
   color: white;
+  text-align: center;
 }
 
 .background {
@@ -24,7 +25,6 @@ body {
 }
 
 .display {
-  position: fixed;
   display:flex;
   justify-content: space-evenly;
   align-items: center;
@@ -44,20 +44,11 @@ body {
   padding: 2.5rem;
 }
 
-.logo_img {
-  display: flex;
-}
-
 .logo_text {
   display: flex;
   font-size: 5rem;
   font-weight: bold;
   letter-spacing: .2rem;
-}
-
-.logo_img>a>img {
-  width: 15rem;
-  height: 15rem;
 }
 
 .about_me {
@@ -72,11 +63,6 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
   list-style: none;
-}
-
-.contact_icons>li>a:hover {
-  text-decoration: none;
-  color: lightgrey;
 }
 
 .contact_icon_first {
@@ -99,6 +85,36 @@ body {
   transition: all .15s ease-in-out;
 }
 
+.link:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.error_status {
+  display: flex;
+  font-size: 10em;
+}
+
+.error_message {
+  display:flex;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.link_back {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.link_back:hover {
+  display: flex;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  transition: all .15s ease-in-out;
+}
+
 @media(max-width: 800px){
   .logo_text {
     display: flex;
@@ -106,11 +122,6 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: .1rem;
-  }
-
-  .logo_img>a>img {
-    width: 7.5rem;
-    height: 7.5rem;
   }
 
   .about_me {
@@ -124,6 +135,7 @@ body {
     flex-direction: column;
     list-style: none;
     text-align: center;
+    padding: 0;
   }
 
   .contact_icon_first {
@@ -145,6 +157,17 @@ body {
     font-size: .75em;
     transition: all .15s ease-in-out;
   }
+
+  .error_status {
+    display: flex;
+    font-size: 6em;
+  }
+
+  .error_message {
+    display:flex;
+    font-weight: bold;
+    font-size: 1em;
+  }
 }
 
 @media(max-width: 400px){
@@ -154,11 +177,6 @@ body {
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .1rem;
-  }
-
-  .logo_img>a>img {
-    width: 4rem;
-    height: 4rem;
   }
 
   .about_me {
@@ -171,6 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
+    padding: 0;
   }
 
   .contact_icon_first {
@@ -191,5 +210,16 @@ body {
     padding: 0.1em 0.5em;
     font-size: .6em;
     transition: all .15s ease-in-out;
+  }
+
+  .error_status {
+    display: flex;
+    font-size: 4em;
+  }
+
+  .error_message {
+    display:flex;
+    font-weight: bold;
+    font-size: .75em;
   }
 }
